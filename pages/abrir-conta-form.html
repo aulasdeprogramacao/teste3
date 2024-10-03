@@ -91,7 +91,7 @@
                         descrito na Política
                         de
                         Privacidade do banco.</p>
-                    <span class="mensagem-erro"></span>
+                    <span class="mensagem-erro" id="valida-termo"></span>
                 </fieldset>
 
                 <div>
@@ -158,6 +158,32 @@
             <h2 class="rodape__logo"><span class="rodape__logo--negrito">Moni</span>Bank</h2>
         </section>
     </footer>
+
+<script>
+    function validaform(){
+        if (document.getElementById("nome")==""){
+            document.getElementById("valida-nome").innerHTML="O campo nome não pode estar em branco";
+        } else {
+            document.getElementById("valida-nome").innerHTML="";
+        }
+        if (document.getElementById("email")==""){
+            document.getElementById("valida-email").innerHTML="O campo nome não pode estar em branco";
+        } else {
+            document.getElementById("valida-email").innerHTML="";
+        }
+        if (document.getElementById("rg")==""){
+            document.getElementById("valida-rg").innerHTML="O campo nome não pode estar em branco";
+        } else {
+            document.getElementById("valida-rg").innerHTML="";
+        }
+        if (document.getElementById("cpf")==""){
+            document.getElementById("valida-cpf").innerHTML="O campo nome não pode estar em branco";
+        } else {
+            document.getElementById("valida-cpf").innerHTML="";
+        }
+    }
+</script>
+
 </body>
 
 </html>
